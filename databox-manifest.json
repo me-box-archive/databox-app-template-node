@@ -1,7 +1,7 @@
 {
 	"manifest-version": 1,
 
-	"name": "template-node",
+	"name": "databox-app-template-node",
 	"databox-type": "app",
 	"version": "0.1.0",
 
