@@ -1,0 +1,26 @@
+{
+	"manifest-version": 1,
+
+	"name": "template-node",
+	"databox-type": "app",
+	"version": "0.1.0",
+
+	"description": "A template Databox app in Node.js",
+	"author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
+	"license": "MIT",
+	"tags": [
+		"template",
+		"app",
+		"nodejs"
+	],
+
+	"homepage": "https://github.com/me-box/databox-app-template-node",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/me-box/databox-app-template-node"
+	},
+
+	"packages": [],
+	"allowed-combinations": [],
+	"datasources": []
+}
