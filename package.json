@@ -1,0 +1,29 @@
+{
+  "name": "databox-app-template-node",
+  "version": "0.1.0",
+  "description": "A template Databox app in Node.js",
+  "scripts": {
+    "start": "node main.js",
+    "publish": "docker build -t databox-app-template-node . && docker tag databox-app-template-node localhost:5000/databox-app-template-node && docker push localhost:5000/databox-app-template-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yousefamar/databox-app-template-node.git"
+  },
+  "keywords": [
+    "template",
+    "app",
+    "nodejs"
+  ],
+  "author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yousefamar/databox-app-template-node/issues"
+  },
+  "homepage": "https://github.com/yousefamar/databox-app-template-node#readme",
+  "dependencies": {
+    "containerized": "^1.0.2",
+    "request": "^2.79.0",
+    "ws": "^2.1.0"
+  }
+}
