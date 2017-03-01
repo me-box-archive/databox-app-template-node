@@ -1,4 +1,4 @@
-var databox = require('./lib/databox.js');
+var databox = require('node-databox');
 
 databox.listAvailableStores().then((stores) => console.log(stores));
 
