@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ADD . .
+COPY . .
 RUN npm install
 
 LABEL databox.type="app"
