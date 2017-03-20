@@ -2,13 +2,17 @@
   "name": "databox-app-template-node",
   "version": "0.1.0",
   "description": "A template Databox app in Node.js",
+  "config": {
+    "databox-registry": "localhost:5000"
+  },
   "scripts": {
-    "start": "node main.js",
-    "publish": "docker build -t databox-app-template-node . && docker tag databox-app-template-node localhost:5000/databox-app-template-node && docker push localhost:5000/databox-app-template-node"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "docker build -t $npm_package_name .",
+    "release": "docker tag $npm_package_name $npm_package_config_databox_registry/$npm_package_name && docker push $npm_package_config_databox_registry/$npm_package_name"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yousefamar/databox-app-template-node.git"
+    "url": "git+https://github.com/me-box/databox-app-template-node.git"
   },
   "keywords": [
     "template",
@@ -18,10 +22,10 @@
   "author": "Yousef Amar <yousef@amar.io> (http://yousefamar.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yousefamar/databox-app-template-node/issues"
+    "url": "https://github.com/me-box/databox-app-template-node/issues"
   },
-  "homepage": "https://github.com/yousefamar/databox-app-template-node#readme",
+  "homepage": "https://github.com/me-box/databox-app-template-node#readme",
   "dependencies": {
-    "node-databox": "^0.1.0"
+    "node-databox": "^0.2.8"
   }
 }
