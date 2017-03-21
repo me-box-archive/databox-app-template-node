@@ -20,7 +20,38 @@
 		"url": "git+https://github.com/me-box/databox-app-template-node"
 	},
 
-	"packages": [],
+	"packages": [
+		{
+			"name": "Export Hack",
+			"purpose": "Temporary \"permissions\" for exporting",
+			"install": "required",
+			"risks": "Leaking all your data.",
+			"benefits": "Demoing the export service.",
+			"datastores": [ "DS_export" ]
+		}
+	],
+
 	"allowed-combinations": [],
-	"datasources": []
+
+	"datasources": [
+		{
+			"type": "export",
+			"required": true,
+			"name": "export",
+			"clientid": "DS_export",
+			"granularities": []
+		}
+	],
+
+	"export-whitelist": [
+		{
+			"url": "https://export.amar.io/",
+			"description": "Databox export destination request logger"
+		}, {
+			"url": "https://wtfismyip.com/json",
+			"description": "Your public IP, location, hostname, ISP, and Tor status"
+		}
+	],
+
+	"resource-requirements": {}
 }

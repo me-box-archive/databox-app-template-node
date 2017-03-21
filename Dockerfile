@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ADD . .
+COPY . .
 RUN npm install
 
 LABEL databox.type="app"
@@ -8,3 +8,4 @@ LABEL databox.type="app"
 #EXPOSE 8080
 
 CMD ["npm","start"]
+#CMD ["sleep","2147483647"]
