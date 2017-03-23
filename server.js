@@ -8,6 +8,10 @@ databox.catalog.mapStoreCatalogs((cat, i) => {
 	console.log('Store ' + i + ':', JSON.stringify(cat, null, '\t'));
 }).catch((err) => console.error(err));
 
+databox.export.longpoll('https://export.amar.io/', { foo: 'bar' })
+	.then((response) => console.log(response))
+	.catch((err) => console.error(err));
+
 /*
 var notifications = databox.notifications.connect(href)
 
