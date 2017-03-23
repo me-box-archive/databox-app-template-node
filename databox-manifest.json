@@ -22,12 +22,12 @@
 
 	"packages": [
 		{
-			"name": "Export Hack",
-			"purpose": "Temporary \"permissions\" for exporting",
+			"name": "Test",
+			"purpose": "Test package",
 			"install": "required",
 			"risks": "Leaking all your data.",
-			"benefits": "Demoing the export service.",
-			"datastores": [ "DS_export" ]
+			"benefits": "Demoing the apps.",
+			"datastores": [ "DS_test" ]
 		}
 	],
 
@@ -35,10 +35,10 @@
 
 	"datasources": [
 		{
-			"type": "export",
+			"type": "test",
 			"required": true,
-			"name": "export",
-			"clientid": "DS_export",
+			"name": "test",
+			"clientid": "DS_test",
 			"granularities": []
 		}
 	],
