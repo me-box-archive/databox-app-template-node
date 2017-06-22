@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/me-box/databox-app-template-node#readme",
   "dependencies": {
-    "node-databox": "^0.3.0"
+    "node-databox": "^0.5.0"
   }
 }
